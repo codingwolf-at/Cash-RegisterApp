@@ -16,7 +16,17 @@ giveChangeButton.addEventListener("click", calculateChange);
 // function to calculate change
 function calculateChange() {
     const inputBillAmount = inputBill.value;
-    const inputCashAmount = inputCash.value;
-    const change = inputCashAmount - inputBillAmount;
-    console.log(inputBillAmount, inputCashAmount, change);
+    const inputCashAmount = inputCash.value;    
+    let change = inputCashAmount - inputBillAmount;
+
+    availableNotes.map(note => {
+        if(note <= change) {
+            var numOfNotes = parseInt(change/note);
+            change = change - (note*numOfNotes);
+            console.log("remaining", change)
+            console.log(note + " x " + numOfNotes);
+        }
+    })
+
+    // console.log(inputBillAmount, inputCashAmount, change);
 }
