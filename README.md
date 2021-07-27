@@ -1,16 +1,2 @@
-# Cash Register
-
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/codingwolf-at/Cash-RegisterApp)
-
-![SS](assets/one.png)
-
-## Made Using
-
-- HTML
-- CSS
-- BOOTSTRAP
-- JavaScript
-
-## Hosted on 
-
-- Netlify
+# CASH REGISTER
+This is  a cash register app made using vanilla javascript, where you put in the total bill amount and the cash received in the input field and then hit the button. And then just below you will see a list of available notes in tabular form and the number of notes you need to return the change.
