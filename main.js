@@ -24,7 +24,7 @@ function calculateChange() {
 
     console.log(typeof inputBillAmount);
 
-    if (inputBillAmount === "" || inputCashAmount === "" || Number(inputBillAmount) < 0 || Number(inputCashAmount) < 0) {
+    if (inputBillAmount === "" || inputCashAmount === "" || Number(inputBillAmount) <= 0 || Number(inputCashAmount) <= 0) {
         alert("Both inputs needs to be a non zero positive number!")
     } else if (Number(inputBillAmount) > Number(inputCashAmount)) {
         alert("Cash given needs to be greater than or equal to the bill amount!")
